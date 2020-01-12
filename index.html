@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h2>Prime Number</h2>
+    <script>
+        let number, count=0, n0 = 2;
+        let isPrime = (number) => {
+            for(i=2;i<=Math.sqrt(number);i++){
+               if(number%i==0 || number < 2)
+                   return false;
+            }
+            return true;
+        }
+            number = parseInt(prompt("Nhap so luong so nguyen to: "));
+            while (count<=number){
+                if(isPrime(n0)) {
+                    document.write("so nguyen to: " + n0 + "<br>");
+                    count++;
+                }
+                n0++;
+        }
+    </script>
+</body>
+</html>
